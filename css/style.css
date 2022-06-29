@@ -1,0 +1,123 @@
+:root {
+
+    --primario: #9796F0;
+    --secundario: #FBC7D4;
+    --gris: #F5F5F5;
+    --blanco: #FFFFFF;
+    --oscuro: #000000;
+}
+
+html{
+
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body{
+
+    font-size: 30px;
+    font-family: 'Baloo 2';
+    background-image: linear-gradient(to right, var(--primario) 0%, var(--secundario) 100%);
+
+}
+
+h1{
+    position: absolute;
+    top: 10rem;
+}
+
+h2{
+    font-size: 3rem;
+    position: absolute;
+    top: 17rem;
+}
+h1,h2{
+    color: var(--blanco);
+    left: 4.8rem;
+    font-style: normal;
+    line-height: 15.7rem;
+    mix-blend-mode: normal;
+}
+
+.nav-bg{
+    background-color: var(--gris);
+}
+
+.contenedor{
+    max-width: 120rem;
+    height: 8rem;
+    margin: 0 auto;
+}
+
+.navegacion-principal{
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px){
+    .navegacion-principal{
+        flex-direction: row;
+        justify-content: space-between;
+    } 
+}
+
+.navegacion-principal a{
+    display: block;
+    text-align: center;
+    color: var(--oscuro);
+    text-decoration: none;
+    padding: 2rem;
+}
+
+.logo{
+    font-weight: bold;
+}
+.logo span{
+    font-weight: bold;
+    color: var(--primario)
+}
+.navegacion-principal a:hover{
+    color: var(--primario);
+}
+
+
+.boton{
+    background-color: var(--blanco);
+    color: var(--primario);
+    padding: 1rem 3rem 1rem 3rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 2.5rem;
+    text-align: center;
+}
+
+.singin{
+    position: absolute;
+    left: 120rem;
+    top: 1rem;
+}
+.conocemas{
+    position: absolute;
+    top: 30rem;
+    left: 4.8rem;
+}
+
+.boton:hover{
+    background-color: var(--secundario);
+    color: var(--blanco);
+    cursor: pointer;
+}
+
+.diseño {
+    background-image: url(../img/chica-diseño.png);
+    background-repeat: no-repeat;
+    height: 40rem;
+    padding: 3rem;
+    position: absolute;
+    width: 40%;
+    left: 70rem;
+}
+
